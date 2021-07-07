@@ -72,12 +72,12 @@ class _HomeState extends State<Home> {
               items: items,
               search: query,
               groupBy: (item) => item[0],
-              headerBuilder: (context, headerObject) {
+              groupTitleBuilder: (context, headerObject) {
                 return Container(
                   width: MediaQuery.of(context).size.width,
                   color: Colors.grey[400],
                   padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                  child: Text(headerObject),
+                  child: Text(headerObject.toString()),
                 );
               },
               itemBuilder: (context, item) {
@@ -92,17 +92,4 @@ class _HomeState extends State<Home> {
       ),
     );
   }
-}
-
-class Item {
-  final int id;
-  final String name;
-
-  Item(
-    this.id,
-    this.name,
-  );
-
-  @override
-  String toString() => '{id: $id, name: $name}';
 }
