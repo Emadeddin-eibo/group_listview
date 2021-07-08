@@ -2,6 +2,11 @@
 
 List widget for grouping dynamic items.
 
+<div class="display:inline-block">
+        <img src="https://github.com/Emadeddin-eibo/group_listview/raw/master/sample.gif" class="display:inline-block" height="650"/>
+</div>
+
+
 ## Explaining the code
 
 The main idea is based on sorting and adding the items to dynamic Map,
